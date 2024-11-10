@@ -24,12 +24,13 @@ void main() {
 
 void DrawSprite(GLuint texture, float x, float y, float width, float height)
 {
+    // Adjust texture coordinates to flip the Y-axis
     float vertices[] = {
         // Positions                      // Texture coordinates
-        x, y + height, 0.0f, 1.0f,        // Top-left
-        x, y, 0.0f, 0.0f,                 // Bottom-left
-        x + width, y, 1.0f, 0.0f,         // Bottom-right
-        x + width, y + height, 1.0f, 1.0f // Top-right
+        x, y + height, 0.0f, 0.0f,        // Top-left (flipped Y)
+        x, y, 0.0f, 1.0f,                 // Bottom-left
+        x + width, y, 1.0f, 1.0f,         // Bottom-right
+        x + width, y + height, 1.0f, 0.0f // Top-right (flipped Y)
     };
     GLuint indices[] = {
         0, 1, 2, // First triangle

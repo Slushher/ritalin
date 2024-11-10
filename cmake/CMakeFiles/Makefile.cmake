@@ -44,6 +44,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/ritalin_lib.dir/DependInfo.cmake"
   "CMakeFiles/ritalin.dir/DependInfo.cmake"
-  "CMakeFiles/ritalin_example.dir/DependInfo.cmake"
   )

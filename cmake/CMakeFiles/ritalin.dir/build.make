@@ -69,175 +69,32 @@ include CMakeFiles/ritalin.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ritalin.dir/flags.make
 
-CMakeFiles/ritalin.dir/lib/glad/glad.c.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/lib/glad/glad.c.o: /home/slushy/Code/ritalin/lib/glad/glad.c
-CMakeFiles/ritalin.dir/lib/glad/glad.c.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ritalin.dir/lib/glad/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ritalin.dir/lib/glad/glad.c.o -MF CMakeFiles/ritalin.dir/lib/glad/glad.c.o.d -o CMakeFiles/ritalin.dir/lib/glad/glad.c.o -c /home/slushy/Code/ritalin/lib/glad/glad.c
+CMakeFiles/ritalin.dir/example/main.cpp.o: CMakeFiles/ritalin.dir/flags.make
+CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/main.cpp
+CMakeFiles/ritalin.dir/example/main.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ritalin.dir/example/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/example/main.cpp.o -MF CMakeFiles/ritalin.dir/example/main.cpp.o.d -o CMakeFiles/ritalin.dir/example/main.cpp.o -c /home/slushy/Code/ritalin/example/main.cpp
 
-CMakeFiles/ritalin.dir/lib/glad/glad.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ritalin.dir/lib/glad/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/slushy/Code/ritalin/lib/glad/glad.c > CMakeFiles/ritalin.dir/lib/glad/glad.c.i
+CMakeFiles/ritalin.dir/example/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/example/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/example/main.cpp > CMakeFiles/ritalin.dir/example/main.cpp.i
 
-CMakeFiles/ritalin.dir/lib/glad/glad.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ritalin.dir/lib/glad/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/slushy/Code/ritalin/lib/glad/glad.c -o CMakeFiles/ritalin.dir/lib/glad/glad.c.s
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o: /home/slushy/Code/ritalin/lib/imgui/imgui.cpp
-CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o -MF CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o.d -o CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o -c /home/slushy/Code/ritalin/lib/imgui/imgui.cpp
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/lib/imgui/imgui.cpp > CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.i
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/lib/imgui/imgui.cpp -o CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.s
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o: /home/slushy/Code/ritalin/lib/imgui/imgui_demo.cpp
-CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o -MF CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o.d -o CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o -c /home/slushy/Code/ritalin/lib/imgui/imgui_demo.cpp
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/lib/imgui/imgui_demo.cpp > CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.i
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/lib/imgui/imgui_demo.cpp -o CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.s
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o: /home/slushy/Code/ritalin/lib/imgui/imgui_draw.cpp
-CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o -MF CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o.d -o CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o -c /home/slushy/Code/ritalin/lib/imgui/imgui_draw.cpp
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/lib/imgui/imgui_draw.cpp > CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.i
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/lib/imgui/imgui_draw.cpp -o CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.s
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o: /home/slushy/Code/ritalin/lib/imgui/imgui_impl_glfw.cpp
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o -c /home/slushy/Code/ritalin/lib/imgui/imgui_impl_glfw.cpp
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/lib/imgui/imgui_impl_glfw.cpp > CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.i
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/lib/imgui/imgui_impl_glfw.cpp -o CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.s
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o: /home/slushy/Code/ritalin/lib/imgui/imgui_impl_opengl3.cpp
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o -c /home/slushy/Code/ritalin/lib/imgui/imgui_impl_opengl3.cpp
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/lib/imgui/imgui_impl_opengl3.cpp > CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.i
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/lib/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.s
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o: /home/slushy/Code/ritalin/lib/imgui/imgui_tables.cpp
-CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o -MF CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o.d -o CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o -c /home/slushy/Code/ritalin/lib/imgui/imgui_tables.cpp
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/lib/imgui/imgui_tables.cpp > CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.i
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/lib/imgui/imgui_tables.cpp -o CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.s
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o: /home/slushy/Code/ritalin/lib/imgui/imgui_widgets.cpp
-CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o -MF CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o -c /home/slushy/Code/ritalin/lib/imgui/imgui_widgets.cpp
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/lib/imgui/imgui_widgets.cpp > CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.i
-
-CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/lib/imgui/imgui_widgets.cpp -o CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.s
-
-CMakeFiles/ritalin.dir/src/sprite.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/src/sprite.cpp.o: /home/slushy/Code/ritalin/src/sprite.cpp
-CMakeFiles/ritalin.dir/src/sprite.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ritalin.dir/src/sprite.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/src/sprite.cpp.o -MF CMakeFiles/ritalin.dir/src/sprite.cpp.o.d -o CMakeFiles/ritalin.dir/src/sprite.cpp.o -c /home/slushy/Code/ritalin/src/sprite.cpp
-
-CMakeFiles/ritalin.dir/src/sprite.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/src/sprite.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/src/sprite.cpp > CMakeFiles/ritalin.dir/src/sprite.cpp.i
-
-CMakeFiles/ritalin.dir/src/sprite.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/src/sprite.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/src/sprite.cpp -o CMakeFiles/ritalin.dir/src/sprite.cpp.s
-
-CMakeFiles/ritalin.dir/src/texture.cpp.o: CMakeFiles/ritalin.dir/flags.make
-CMakeFiles/ritalin.dir/src/texture.cpp.o: /home/slushy/Code/ritalin/src/texture.cpp
-CMakeFiles/ritalin.dir/src/texture.cpp.o: CMakeFiles/ritalin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ritalin.dir/src/texture.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ritalin.dir/src/texture.cpp.o -MF CMakeFiles/ritalin.dir/src/texture.cpp.o.d -o CMakeFiles/ritalin.dir/src/texture.cpp.o -c /home/slushy/Code/ritalin/src/texture.cpp
-
-CMakeFiles/ritalin.dir/src/texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ritalin.dir/src/texture.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slushy/Code/ritalin/src/texture.cpp > CMakeFiles/ritalin.dir/src/texture.cpp.i
-
-CMakeFiles/ritalin.dir/src/texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/src/texture.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/src/texture.cpp -o CMakeFiles/ritalin.dir/src/texture.cpp.s
+CMakeFiles/ritalin.dir/example/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ritalin.dir/example/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slushy/Code/ritalin/example/main.cpp -o CMakeFiles/ritalin.dir/example/main.cpp.s
 
 # Object files for target ritalin
 ritalin_OBJECTS = \
-"CMakeFiles/ritalin.dir/lib/glad/glad.c.o" \
-"CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o" \
-"CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o" \
-"CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o" \
-"CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o" \
-"CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o" \
-"CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o" \
-"CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o" \
-"CMakeFiles/ritalin.dir/src/sprite.cpp.o" \
-"CMakeFiles/ritalin.dir/src/texture.cpp.o"
+"CMakeFiles/ritalin.dir/example/main.cpp.o"
 
 # External object files for target ritalin
 ritalin_EXTERNAL_OBJECTS =
 
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/lib/glad/glad.c.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/src/sprite.cpp.o
-/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/src/texture.cpp.o
+/home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/example/main.cpp.o
 /home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/build.make
+/home/slushy/Code/ritalin/bin/ritalin: libritalin_lib.a
 /home/slushy/Code/ritalin/bin/ritalin: CMakeFiles/ritalin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable /home/slushy/Code/ritalin/bin/ritalin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/slushy/Code/ritalin/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/slushy/Code/ritalin/bin/ritalin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ritalin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

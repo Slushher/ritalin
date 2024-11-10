@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ritalin_lib
+
+# Build rule for target.
+ritalin_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ritalin_lib
+.PHONY : ritalin_lib
+
+# fast build rule for target.
+ritalin_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/build
+.PHONY : ritalin_lib/fast
+
+#=============================================================================
 # Target rules for targets named ritalin
 
 # Build rule for target.
@@ -129,26 +142,36 @@ ritalin/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/build
 .PHONY : ritalin/fast
 
-#=============================================================================
-# Target rules for targets named ritalin_example
+example/main.o: example/main.cpp.o
+.PHONY : example/main.o
 
-# Build rule for target.
-ritalin_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ritalin_example
-.PHONY : ritalin_example
+# target to build an object file
+example/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/example/main.cpp.o
+.PHONY : example/main.cpp.o
 
-# fast build rule for target.
-ritalin_example/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/build
-.PHONY : ritalin_example/fast
+example/main.i: example/main.cpp.i
+.PHONY : example/main.i
+
+# target to preprocess a source file
+example/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/example/main.cpp.i
+.PHONY : example/main.cpp.i
+
+example/main.s: example/main.cpp.s
+.PHONY : example/main.s
+
+# target to generate assembly for a file
+example/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/example/main.cpp.s
+.PHONY : example/main.cpp.s
 
 lib/glad/glad.o: lib/glad/glad.c.o
 .PHONY : lib/glad/glad.o
 
 # target to build an object file
 lib/glad/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/glad/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/glad/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/glad/glad.c.o
 .PHONY : lib/glad/glad.c.o
 
 lib/glad/glad.i: lib/glad/glad.c.i
@@ -156,8 +179,7 @@ lib/glad/glad.i: lib/glad/glad.c.i
 
 # target to preprocess a source file
 lib/glad/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/glad/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/glad/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/glad/glad.c.i
 .PHONY : lib/glad/glad.c.i
 
 lib/glad/glad.s: lib/glad/glad.c.s
@@ -165,8 +187,7 @@ lib/glad/glad.s: lib/glad/glad.c.s
 
 # target to generate assembly for a file
 lib/glad/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/glad/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/glad/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/glad/glad.c.s
 .PHONY : lib/glad/glad.c.s
 
 lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
@@ -174,8 +195,7 @@ lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
 
 # target to build an object file
 lib/imgui/imgui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui.cpp.o
 .PHONY : lib/imgui/imgui.cpp.o
 
 lib/imgui/imgui.i: lib/imgui/imgui.cpp.i
@@ -183,8 +203,7 @@ lib/imgui/imgui.i: lib/imgui/imgui.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui.cpp.i
 .PHONY : lib/imgui/imgui.cpp.i
 
 lib/imgui/imgui.s: lib/imgui/imgui.cpp.s
@@ -192,8 +211,7 @@ lib/imgui/imgui.s: lib/imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui.cpp.s
 .PHONY : lib/imgui/imgui.cpp.s
 
 lib/imgui/imgui_demo.o: lib/imgui/imgui_demo.cpp.o
@@ -201,8 +219,7 @@ lib/imgui/imgui_demo.o: lib/imgui/imgui_demo.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_demo.cpp.o
 .PHONY : lib/imgui/imgui_demo.cpp.o
 
 lib/imgui/imgui_demo.i: lib/imgui/imgui_demo.cpp.i
@@ -210,8 +227,7 @@ lib/imgui/imgui_demo.i: lib/imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_demo.cpp.i
 .PHONY : lib/imgui/imgui_demo.cpp.i
 
 lib/imgui/imgui_demo.s: lib/imgui/imgui_demo.cpp.s
@@ -219,8 +235,7 @@ lib/imgui/imgui_demo.s: lib/imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_demo.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_demo.cpp.s
 .PHONY : lib/imgui/imgui_demo.cpp.s
 
 lib/imgui/imgui_draw.o: lib/imgui/imgui_draw.cpp.o
@@ -228,8 +243,7 @@ lib/imgui/imgui_draw.o: lib/imgui/imgui_draw.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_draw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_draw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_draw.cpp.o
 .PHONY : lib/imgui/imgui_draw.cpp.o
 
 lib/imgui/imgui_draw.i: lib/imgui/imgui_draw.cpp.i
@@ -237,8 +251,7 @@ lib/imgui/imgui_draw.i: lib/imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_draw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_draw.cpp.i
 .PHONY : lib/imgui/imgui_draw.cpp.i
 
 lib/imgui/imgui_draw.s: lib/imgui/imgui_draw.cpp.s
@@ -246,8 +259,7 @@ lib/imgui/imgui_draw.s: lib/imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_draw.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_draw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_draw.cpp.s
 .PHONY : lib/imgui/imgui_draw.cpp.s
 
 lib/imgui/imgui_impl_glfw.o: lib/imgui/imgui_impl_glfw.cpp.o
@@ -255,8 +267,7 @@ lib/imgui/imgui_impl_glfw.o: lib/imgui/imgui_impl_glfw.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_impl_glfw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_impl_glfw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_impl_glfw.cpp.o
 .PHONY : lib/imgui/imgui_impl_glfw.cpp.o
 
 lib/imgui/imgui_impl_glfw.i: lib/imgui/imgui_impl_glfw.cpp.i
@@ -264,8 +275,7 @@ lib/imgui/imgui_impl_glfw.i: lib/imgui/imgui_impl_glfw.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_impl_glfw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_impl_glfw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_impl_glfw.cpp.i
 .PHONY : lib/imgui/imgui_impl_glfw.cpp.i
 
 lib/imgui/imgui_impl_glfw.s: lib/imgui/imgui_impl_glfw.cpp.s
@@ -273,8 +283,7 @@ lib/imgui/imgui_impl_glfw.s: lib/imgui/imgui_impl_glfw.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_impl_glfw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_glfw.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_impl_glfw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_impl_glfw.cpp.s
 .PHONY : lib/imgui/imgui_impl_glfw.cpp.s
 
 lib/imgui/imgui_impl_opengl3.o: lib/imgui/imgui_impl_opengl3.cpp.o
@@ -282,8 +291,7 @@ lib/imgui/imgui_impl_opengl3.o: lib/imgui/imgui_impl_opengl3.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_impl_opengl3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_impl_opengl3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_impl_opengl3.cpp.o
 .PHONY : lib/imgui/imgui_impl_opengl3.cpp.o
 
 lib/imgui/imgui_impl_opengl3.i: lib/imgui/imgui_impl_opengl3.cpp.i
@@ -291,8 +299,7 @@ lib/imgui/imgui_impl_opengl3.i: lib/imgui/imgui_impl_opengl3.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_impl_opengl3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_impl_opengl3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_impl_opengl3.cpp.i
 .PHONY : lib/imgui/imgui_impl_opengl3.cpp.i
 
 lib/imgui/imgui_impl_opengl3.s: lib/imgui/imgui_impl_opengl3.cpp.s
@@ -300,8 +307,7 @@ lib/imgui/imgui_impl_opengl3.s: lib/imgui/imgui_impl_opengl3.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_impl_opengl3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_impl_opengl3.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_impl_opengl3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_impl_opengl3.cpp.s
 .PHONY : lib/imgui/imgui_impl_opengl3.cpp.s
 
 lib/imgui/imgui_tables.o: lib/imgui/imgui_tables.cpp.o
@@ -309,8 +315,7 @@ lib/imgui/imgui_tables.o: lib/imgui/imgui_tables.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_tables.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_tables.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_tables.cpp.o
 .PHONY : lib/imgui/imgui_tables.cpp.o
 
 lib/imgui/imgui_tables.i: lib/imgui/imgui_tables.cpp.i
@@ -318,8 +323,7 @@ lib/imgui/imgui_tables.i: lib/imgui/imgui_tables.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_tables.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_tables.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_tables.cpp.i
 .PHONY : lib/imgui/imgui_tables.cpp.i
 
 lib/imgui/imgui_tables.s: lib/imgui/imgui_tables.cpp.s
@@ -327,8 +331,7 @@ lib/imgui/imgui_tables.s: lib/imgui/imgui_tables.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_tables.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_tables.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_tables.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_tables.cpp.s
 .PHONY : lib/imgui/imgui_tables.cpp.s
 
 lib/imgui/imgui_widgets.o: lib/imgui/imgui_widgets.cpp.o
@@ -336,8 +339,7 @@ lib/imgui/imgui_widgets.o: lib/imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_widgets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_widgets.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_widgets.cpp.o
 .PHONY : lib/imgui/imgui_widgets.cpp.o
 
 lib/imgui/imgui_widgets.i: lib/imgui/imgui_widgets.cpp.i
@@ -345,8 +347,7 @@ lib/imgui/imgui_widgets.i: lib/imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_widgets.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_widgets.cpp.i
 .PHONY : lib/imgui/imgui_widgets.cpp.i
 
 lib/imgui/imgui_widgets.s: lib/imgui/imgui_widgets.cpp.s
@@ -354,17 +355,39 @@ lib/imgui/imgui_widgets.s: lib/imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/lib/imgui/imgui_widgets.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/lib/imgui/imgui_widgets.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/lib/imgui/imgui_widgets.cpp.s
 .PHONY : lib/imgui/imgui_widgets.cpp.s
+
+src/camera.o: src/camera.cpp.o
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
 
 src/sprite.o: src/sprite.cpp.o
 .PHONY : src/sprite.o
 
 # target to build an object file
 src/sprite.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/src/sprite.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/src/sprite.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/sprite.cpp.o
 .PHONY : src/sprite.cpp.o
 
 src/sprite.i: src/sprite.cpp.i
@@ -372,8 +395,7 @@ src/sprite.i: src/sprite.cpp.i
 
 # target to preprocess a source file
 src/sprite.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/src/sprite.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/src/sprite.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/sprite.cpp.i
 .PHONY : src/sprite.cpp.i
 
 src/sprite.s: src/sprite.cpp.s
@@ -381,8 +403,7 @@ src/sprite.s: src/sprite.cpp.s
 
 # target to generate assembly for a file
 src/sprite.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/src/sprite.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/src/sprite.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/sprite.cpp.s
 .PHONY : src/sprite.cpp.s
 
 src/texture.o: src/texture.cpp.o
@@ -390,8 +411,7 @@ src/texture.o: src/texture.cpp.o
 
 # target to build an object file
 src/texture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/src/texture.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/src/texture.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/texture.cpp.o
 .PHONY : src/texture.cpp.o
 
 src/texture.i: src/texture.cpp.i
@@ -399,8 +419,7 @@ src/texture.i: src/texture.cpp.i
 
 # target to preprocess a source file
 src/texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/src/texture.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/src/texture.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/texture.cpp.i
 .PHONY : src/texture.cpp.i
 
 src/texture.s: src/texture.cpp.s
@@ -408,8 +427,7 @@ src/texture.s: src/texture.cpp.s
 
 # target to generate assembly for a file
 src/texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin.dir/build.make CMakeFiles/ritalin.dir/src/texture.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_example.dir/build.make CMakeFiles/ritalin_example.dir/src/texture.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ritalin_lib.dir/build.make CMakeFiles/ritalin_lib.dir/src/texture.cpp.s
 .PHONY : src/texture.cpp.s
 
 # Help Target
@@ -421,7 +439,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ritalin"
-	@echo "... ritalin_example"
+	@echo "... ritalin_lib"
+	@echo "... example/main.o"
+	@echo "... example/main.i"
+	@echo "... example/main.s"
 	@echo "... lib/glad/glad.o"
 	@echo "... lib/glad/glad.i"
 	@echo "... lib/glad/glad.s"
@@ -446,6 +467,9 @@ help:
 	@echo "... lib/imgui/imgui_widgets.o"
 	@echo "... lib/imgui/imgui_widgets.i"
 	@echo "... lib/imgui/imgui_widgets.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
 	@echo "... src/sprite.o"
 	@echo "... src/sprite.i"
 	@echo "... src/sprite.s"

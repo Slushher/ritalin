@@ -7,8 +7,12 @@ GLuint LoadTexture(const char *path, int width, int height)
     GLuint texture;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
+    
     if (path)
     {
+        // Flip the image vertically when loading
+        stbi_set_flip_vertically_on_load(true);  // This flips the image
+
         int imgWidth, imgHeight, nrChannels;
         unsigned char *data = stbi_load(path, &imgWidth, &imgHeight, &nrChannels, 0);
         if (data)
@@ -20,7 +24,7 @@ GLuint LoadTexture(const char *path, int width, int height)
         }
         else
         {
-            std::cerr << "Couldnt load a texture from path\n";
+            std::cerr << "Could not load texture from path\n";
             glDeleteTextures(1, &texture);
             return 0;
         }
@@ -35,10 +39,11 @@ GLuint LoadTexture(const char *path, int width, int height)
     }
     else
     {
-        std::cerr << "No image path or res provided\n";
+        std::cerr << "No image path or resolution provided\n";
         glDeleteTextures(1, &texture);
         return 0;
     }
+    
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);

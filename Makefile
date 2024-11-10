@@ -9,13 +9,14 @@ compile:
 multi:
 	$(MAKE) compile -j 16
 
-example:
+example: cmake_example compile
+
+cmake_example:
 	cmake -B cmake -DBUILD_EXAMPLE=ON
 
 run:
 	./bin/ritalin
 
 clean:
-	rm cmake -rf
+	rm -rf cmake
 	rm -f bin/ritalin
-	rm -f bin/ritalin_example

@@ -1,21 +1,35 @@
 cmake_minimum_required(VERSION 3.23.2)
-
 project(RITALIN VERSION 1.0.0)
 
+# debug flags
 add_compile_options(-g)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../bin/")
-option(BUILD_EXAMPLE "Build the library example" OFF)
-file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.cpp" "lib/glad/glad.*" "lib/imgui/imgui*.*")
-add_executable(ritalin ${SOURCES})
 
-target_include_directories(ritalin PUBLIC headers)
-include_directories("lib/glad/include" "lib")
-target_link_libraries(ritalin -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl -g)
+# binary source
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../bin/")
+
+#set(SHADER_DIR "example/shader")
+#file(GLOB SHADERS "${SHADER_DIR}/*.vs" "${SHADER_DIR}/*.fs")
+
+# cmake example option
+option(BUILD_EXAMPLE "Build the application with example code" OFF)
+
+file(GLOB_RECURSE LIB_SOURCES "src/*.cpp" "lib/glad/glad.*" "lib/imgui/imgui*.*")
+
+# create a static lib
+add_library(ritalin_lib STATIC ${LIB_SOURCES})
+
+target_include_directories(ritalin_lib PUBLIC headers lib/stb)
+include_directories("lib/glad/include" "lib" "example")
+
+target_link_libraries(ritalin_lib -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl)
 
 if(BUILD_EXAMPLE)
-    file(GLOB_RECURSE EXAMPLE_SOURCES "examples/*.cpp")
-    add_executable(ritalin_example ${SOURCES})
-    target_link_libraries(ritalin_example ritalin_lib)
-    target_include_directories(ritalin_example PUBLIC headers)
-    include_directories("lib/glad/include" "lib")
+    add_compile_definitions(BUILD_EXAMPLE)
+    file(GLOB_RECURSE EXAMPLE_SOURCES "example/*.cpp" "example/*.hpp")
+    list(APPEND MAIN_SOURCES ${EXAMPLE_SOURCES})
+else()
+    set(MAIN_SOURCES "example/main.cpp")
 endif()
+
+add_executable(ritalin ${MAIN_SOURCES})
+target_link_libraries(ritalin ritalin_lib)

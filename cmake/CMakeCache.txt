@@ -14,7 +14,7 @@
 # EXTERNAL cache entries
 ########################
 
-//Build the library example
+//Build the application with example code
 BUILD_EXAMPLE:BOOL=ON
 
 //Path to a program.
