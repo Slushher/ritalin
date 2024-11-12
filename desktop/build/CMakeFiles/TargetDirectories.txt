@@ -1,4 +1,0 @@
-/home/slushy/Code/ritalin/desktop/build/CMakeFiles/ritalin_lib.dir
-/home/slushy/Code/ritalin/desktop/build/CMakeFiles/ritalin.dir
-/home/slushy/Code/ritalin/desktop/build/CMakeFiles/edit_cache.dir
-/home/slushy/Code/ritalin/desktop/build/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/ritalin.dir/example/main.cpp.o -o /home/slushy/Code/ritalin/bin/ritalin  libritalin_lib.a -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl
