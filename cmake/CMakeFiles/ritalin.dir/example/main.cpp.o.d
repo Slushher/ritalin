@@ -273,31 +273,72 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstring \
  /usr/include/glm/gtc/type_ptr.inl \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h \
+ /home/slushy/Code/ritalin/headers/texture.hpp \
+ /home/slushy/Code/ritalin/headers/camera.hpp \
+ /home/slushy/Code/ritalin/example/cube.hpp \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++allocator.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memoryfwd.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_uninitialized.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/alloc_traits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/initializer_list \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_function.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memory_resource.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple \
+ /home/slushy/Code/ritalin/headers/shader.hpp \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar \
  /usr/include/wchar.h /usr/include/bits/types/wint_t.h \
  /usr/include/bits/types/mbstate_t.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/exception \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_init_exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeinfo \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/nested_exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/localefwd.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++locale.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale \
  /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cctype \
  /usr/include/ctype.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_forced.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/bits/types/error_t.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/fstream \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/istream \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/exception \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_init_exception.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeinfo \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/nested_exception.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ios_base.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/atomicity.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr.h \
@@ -311,38 +352,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/atomic_word.h \
  /usr/include/sys/single_threaded.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_forced.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_function.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/initializer_list \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/alloc_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/bits/types/error_t.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memory_resource.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/error_constants.h \
@@ -358,31 +367,13 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/istream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/istream.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/thread \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_thread.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/this_thread_sleep.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ratio \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h \
- /home/slushy/Code/ritalin/headers/texture.hpp \
- /home/slushy/Code/ritalin/headers/sprite.hpp \
- /home/slushy/Code/ritalin/headers/camera.hpp \
- /home/slushy/Code/ritalin/example/cube.hpp \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_uninitialized.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
- /home/slushy/Code/ritalin/headers/shader.hpp \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/fstream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/codecvt.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fstream.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream

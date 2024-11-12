@@ -6,7 +6,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o
  /home/slushy/Code/ritalin/example/cube.hpp
  /home/slushy/Code/ritalin/headers/camera.hpp
  /home/slushy/Code/ritalin/headers/shader.hpp
- /home/slushy/Code/ritalin/headers/sprite.hpp
  /home/slushy/Code/ritalin/headers/texture.hpp
  /home/slushy/Code/ritalin/lib/glad/include/KHR/khrplatform.h
  /home/slushy/Code/ritalin/lib/glad/include/glad/glad.h
@@ -316,7 +315,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/codecvt.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h
@@ -344,7 +342,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h
@@ -354,7 +351,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_thread.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h
@@ -369,8 +365,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf_iterator.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/this_thread_sleep.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h
@@ -389,7 +383,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdlib
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstring
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwctype
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/assertions.h
@@ -411,7 +404,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ratio
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdlib.h
@@ -419,7 +411,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/thread
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/bessel_function.tcc
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/beta_function.tcc
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/ell_integral.tcc

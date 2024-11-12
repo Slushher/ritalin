@@ -1,7 +1,7 @@
 #include <camera.hpp>
 
 // Camera variables
-glm::vec3 cameraPos = glm::vec3(0.0f, 64.0f, 0.0f);
+glm::vec3 cameraPos = glm::vec3(0.0f, 1.0f, 0.0f);
 glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
 glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 glm::vec3 direction;
@@ -40,8 +40,7 @@ void mouse_callback(GLFWwindow *window, double xpos, double ypos)
         pitch = 89.0f;
     if (pitch < -89.0f)
         pitch = -89.0f;
-
-    //glm::vec3 direction;
+    
     direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
     direction.y = sin(glm::radians(pitch));
     direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
@@ -51,11 +50,6 @@ void mouse_callback(GLFWwindow *window, double xpos, double ypos)
 
 void scroll_callback(GLFWwindow *window, double xoffset, double yoffset)
 {
-    /*fov -= (float)yoffset;
-    if (fov < 1.0f)
-        fov = 1.0f;
-    if (fov > 45.0f)
-        fov = 45.0f;*/
     cameraSpeed -= (float)yoffset/10.f;
     if (cameraSpeed < 0.1f)
         cameraSpeed = 0.1f;
@@ -65,7 +59,6 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset)
 
 void processInput(GLFWwindow *window)
 {
-
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
     if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)

@@ -5,7 +5,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
   /home/slushy/Code/ritalin/example/cube.hpp \
   /home/slushy/Code/ritalin/headers/camera.hpp \
   /home/slushy/Code/ritalin/headers/shader.hpp \
-  /home/slushy/Code/ritalin/headers/sprite.hpp \
   /home/slushy/Code/ritalin/headers/texture.hpp \
   /home/slushy/Code/ritalin/lib/glad/include/KHR/khrplatform.h \
   /home/slushy/Code/ritalin/lib/glad/include/glad/glad.h \
@@ -315,7 +314,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/codecvt.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h \
@@ -343,7 +341,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h \
@@ -353,7 +350,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_thread.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h \
@@ -368,8 +364,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf_iterator.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/this_thread_sleep.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h \
@@ -388,7 +382,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdlib \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstring \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwctype \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/assertions.h \
@@ -410,7 +403,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ratio \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdlib.h \
@@ -418,7 +410,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/thread \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/bessel_function.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/beta_function.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/ell_integral.tcc \
@@ -502,8 +493,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdlib.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ratio:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/math.h:
@@ -556,10 +545,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/this_thread_sleep.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc:
@@ -600,8 +585,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h:
@@ -626,11 +609,11 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fstream.tcc:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h:
 
@@ -706,10 +689,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/include/glm/gtc/type_ptr.hpp:
 
-/usr/include/pthread.h:
-
-/usr/include/glm/gtc/quaternion.inl:
-
 /usr/include/glm/detail/type_mat2x4.inl:
 
 /usr/include/glm/ext/vector_bool4.hpp:
@@ -728,8 +707,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/include/glm/detail/func_packing.inl:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/thread:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstring:
 
 /usr/include/stdlib.h:
@@ -747,8 +724,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 /usr/include/glm/ext/matrix_float2x4_precision.hpp:
 
 /usr/include/glm/ext/vector_int4.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_thread.h:
 
 /usr/include/strings.h:
 
@@ -820,6 +795,8 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/include/bits/types/sigset_t.h:
 
+/usr/include/bits/types/mbstate_t.h:
+
 /usr/include/glm/detail/func_matrix.inl:
 
 /usr/include/bits/types/locale_t.h:
@@ -845,8 +822,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 /usr/include/bits/types/__fpos64_t.h:
 
 /usr/include/bits/fp-logb.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime:
 
 /usr/include/asm-generic/errno.h:
 
@@ -902,12 +877,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/glm/ext/vector_bool2.hpp:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/bits/stdint-least.h:
-
 /usr/include/bits/types/struct_tm.h:
 
 /usr/include/glm/detail/type_vec1.hpp:
@@ -954,15 +923,17 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /home/slushy/Code/ritalin/headers/camera.hpp:
 
-/usr/include/bits/types/mbstate_t.h:
+/usr/include/bits/iscanonical.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h:
+/usr/include/glm/ext/quaternion_geometric.inl:
 
-/home/slushy/Code/ritalin/headers/sprite.hpp:
+/home/slushy/Code/ritalin/lib/imgui/imconfig.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h:
+/usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/glm/ext/matrix_double3x3.hpp:
+/usr/include/glm/ext/vector_bool2.hpp:
+
+/usr/include/bits/stdint-least.h:
 
 /home/slushy/Code/ritalin/lib/glad/include/glad/glad.h:
 
@@ -988,12 +959,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/include/glm/ext/vector_int1.hpp:
 
-/home/slushy/Code/ritalin/lib/imgui/imconfig.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/glm/ext/quaternion_geometric.inl:
-
 /usr/include/glm/ext/vector_uint3.hpp:
 
 /usr/include/bits/libc-header-start.h:
@@ -1007,10 +972,6 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 /usr/include/bits/math-vector.h:
 
 /usr/include/bits/uio_lim.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/glm/detail/type_mat2x2.hpp:
 
 /usr/include/wctype.h:
 
@@ -1080,7 +1041,19 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/include/glm/ext/vector_bool1.hpp:
 
+/usr/include/pthread.h:
+
+/usr/include/glm/gtc/quaternion.inl:
+
 /usr/include/bits/select.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/glm/detail/type_mat3x4.inl:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath:
 
@@ -1138,13 +1111,9 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 
 /usr/include/bits/endian.h:
 
-/usr/include/bits/waitstatus.h:
+/usr/include/glm/detail/type_mat2x2.hpp:
 
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/glm/detail/type_mat3x4.inl:
+/usr/include/bits/types.h:
 
 /usr/include/glm/detail/type_mat4x2.inl:
 
@@ -1219,6 +1188,10 @@ CMakeFiles/ritalin.dir/example/main.cpp.o: /home/slushy/Code/ritalin/example/mai
 /usr/include/glm/ext/matrix_double4x3.hpp:
 
 /usr/include/glm/ext/matrix_double3x2.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h:
+
+/usr/include/glm/ext/matrix_double3x3.hpp:
 
 /usr/include/glm/gtc/type_ptr.inl:
 
