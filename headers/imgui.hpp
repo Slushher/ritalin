@@ -7,5 +7,5 @@
 
 void initIMGUI(GLFWwindow *window);
 void setupIMGUI();
-void drawIMGUI(int fps);
+void drawIMGUI(int fps, glm::vec3 &selectedColor);
 void shutdownIMGUI();

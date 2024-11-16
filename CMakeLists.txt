@@ -7,10 +7,6 @@ add_compile_options(-g)
 # binary source
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../bin/")
 
-#set(SHADER_DIR "example/shader")
-#file(GLOB SHADERS "${SHADER_DIR}/*.vs" "${SHADER_DIR}/*.fs")
-
-# cmake example option
 option(BUILD_EXAMPLE "Build the application with example code" OFF)
 
 file(GLOB_RECURSE LIB_SOURCES "src/*.cpp" "lib/glad/glad.*" "lib/imgui/imgui*.*")
@@ -21,7 +17,7 @@ add_library(ritalin_lib STATIC ${LIB_SOURCES})
 target_include_directories(ritalin_lib PUBLIC headers lib/stb)
 include_directories("lib/glad/include" "lib" "example")
 
-target_link_libraries(ritalin_lib -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl)
+target_link_libraries(ritalin_lib -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl -g)
 
 if(BUILD_EXAMPLE)
     add_compile_definitions(BUILD_EXAMPLE)

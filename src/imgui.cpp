@@ -1,4 +1,5 @@
 #include <imgui.hpp>
+#include <iostream>
 
 void initIMGUI(GLFWwindow *window)
 {
@@ -17,12 +18,18 @@ void setupIMGUI()
     ImGui::NewFrame();
 }
 
-void drawIMGUI(int fps)
+void drawIMGUI(int fps, glm::vec3 &selectedColor)
 {
     ImGui::Begin("ImGUI");
     ImGui::Text("Player XYZ : %f, %f, %f", cameraPos.x, cameraPos.y, cameraPos.z);
     ImGui::Text("Player direction : %f, %f, %f", direction.x, direction.y, direction.z);
     ImGui::Text("FPS : %i", fps);
+
+    if (ImGui::ColorPicker3("Object Color", &selectedColor[0]))
+    {
+        std::cout << "Selected Color: " << selectedColor.x << ", " << selectedColor.y << ", " << selectedColor.z << std::endl;
+    }
+
     ImGui::End();
 
     ImGui::Render();

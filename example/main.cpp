@@ -1,5 +1,4 @@
 #define STB_IMAGE_IMPLEMENTATION
-
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <stb/stb_image.h>
@@ -8,7 +7,6 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <texture.hpp>
 #include <camera.hpp>
-#include <cube.hpp>
 #include <shader.hpp>
 #include <imgui.hpp>
 #include <model.hpp>
@@ -16,10 +14,18 @@
 const float SCR_WIDTH = 1280.f;
 const float SCR_HEIGHT = 720.f;
 
-glm::vec3 lightPos(1.f, 3.0f, -3.f);
+glm::vec3 lightPos(1.f, 25.0f, -3.f);
 GLfloat deltaTime = 0.0f;
 GLfloat lastFrame = 0.0f;
 int fps = 0;
+glm::vec3 selectedColor(0.0f, 0.5f, 1.0f);
+std::vector<Object> sceneObjects;
+
+bool file_exists(const std::string &filepath)
+{
+    std::ifstream file(filepath);
+    return file.good();
+}
 
 int main()
 {
@@ -40,113 +46,83 @@ int main()
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
         return -1;
     glEnable(GL_DEPTH_TEST);
-    glEnable(GL_BLEND);
+    glEnable(GL_BLEND); // ENABLE TRANSPARENCY
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    GLuint ModelVS = compileShader(GL_VERTEX_SHADER, "shader/model.vs");
-    GLuint ModelFS = compileShader(GL_FRAGMENT_SHADER, "shader/model.fs");
-    GLuint shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, ModelVS);
-    glAttachShader(shaderProgram, ModelFS);
-    glLinkProgram(shaderProgram);
-
-    std::vector<glm::vec3> vertices, normals;
-    if (!loadOBJ("example/snowman.obj", vertices, normals))
-    {
-        std::cerr << "Failed to load OBJ" << std::endl;
-        return -1;
-    }
-    unsigned int objVAO, objVBO;
-    glGenVertexArrays(1, &objVAO);
-    glGenBuffers(1, &objVBO);
-
-    glBindVertexArray(objVAO);
-    glBindBuffer(GL_ARRAY_BUFFER, objVBO);
-    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(glm::vec3) * 2, NULL, GL_STATIC_DRAW);
-
-    glBufferSubData(GL_ARRAY_BUFFER, 0, vertices.size() * sizeof(glm::vec3), &vertices[0]);
-    glBufferSubData(GL_ARRAY_BUFFER, vertices.size() * sizeof(glm::vec3), normals.size() * sizeof(glm::vec3), &normals[0]);
-
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void *)0);
-    glEnableVertexAttribArray(0);
-
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void *)(vertices.size() * sizeof(glm::vec3)));
-    glEnableVertexAttribArray(1);
-
-    glBindVertexArray(0);
-
-    unsigned int lightVAO;
-    glGenVertexArrays(1, &lightVAO);
-    glBindVertexArray(lightVAO);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)0);
-    glEnableVertexAttribArray(0);
-
     initIMGUI(window);
-    Shader shader("example/shader/cube.vs", "example/shader/cube.fs");
-    GLuint texture = LoadTexture("example/tex.png", 0, 0);
+    Shader shader("shader/model.vs", "shader/model.fs");
+    shader.use();
+    GLuint modelMatrixLocation = glGetUniformLocation(shader.ID, "model");
+    GLuint viewMatrixLocation = glGetUniformLocation(shader.ID, "view");
+    GLuint projectionMatrixLocation = glGetUniformLocation(shader.ID, "projection");
+    if (modelMatrixLocation == -1 || viewMatrixLocation == -1 || projectionMatrixLocation == -1)
+    {
+        std::cerr << "Failed to find matrix uniforms in the shader program." << std::endl;
+    }
+    if (!file_exists("example/map1.obj"))
+    {
+        std::cout << "file example/map1.obj doesnt exist \n";
+    }
+    glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 2.0f));
+    Model model = loadModel("example/map1.obj", scaleMatrix);
+    Object object;
+    object.vertices = model.vertices;
+    object.normals = model.normals;
+    object.texCoords = model.texCoords;
+    object.indices = model.indices;
 
-    unsigned int VBO, cubeVAO;
-    glGenVertexArrays(1, &cubeVAO);
-    glGenBuffers(1, &VBO);
-    glBindVertexArray(cubeVAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), cubeVertices, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)0);
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
+    setupVAO(object);
+    sceneObjects.push_back(object);
+    Terrain terrain;
+    terrain.vertices = model.vertices;
+    terrain.indices = model.indices;
 
     while (!glfwWindowShouldClose(window))
     {
+        gravityTick(terrain);
         // fps counter
         GLfloat currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
         fps = 1 / deltaTime;
 
-        processInput(window);
+        processMovement(window, terrain);
         glClearColor(0.529f, 0.808f, 0.922f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         setupIMGUI();
         shader.use();
+
+        shader.setVec3("lightPos", lightPos);
+        shader.setVec3("viewPos", cameraPos);
+        shader.setVec3("lightColor", glm::vec3(1.0f, 1.0f, 1.0f));
+        shader.setVec3("objectColor", selectedColor);
+
         glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
         glm::mat4 projection = glm::perspective(glm::radians(fov), SCR_WIDTH / SCR_HEIGHT, 0.1f, 256.0f);
-        glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -2.0f));
-        shader.setMat4("model", model);
-        shader.setMat4("projection", projection);
-        shader.setMat4("view", view);
-        shader.setVec3("lightPos", lightPos);
-        shader.setVec3("viewPos", cameraPos);
-        shader.setVec3("lightColor", glm::vec3(1.0f));
-        shader.setVec3("objectColor", glm::vec3(0.8f, 0.2f, 0.3f));
+        glm::mat4 model = glm::mat4(1.0f);
 
-        glBindTexture(GL_TEXTURE_2D, texture);
-        glBindVertexArray(cubeVAO);
-        glDrawArrays(GL_TRIANGLES, 0, 36);
+        model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+        model = glm::rotate(model, glm::radians(45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 
-        glm::mat4 objModel = glm::mat4(1.0f);
+        glm::mat3 rotation = glm::mat3(glm::rotate(glm::mat4(1.0f), glm::radians(-90.f), glm::vec3(1.0f, 0.0f, 0.0f)));
         glm::mat3 rotationMatrix = glm::mat3(glm::rotate(glm::mat4(1.0f), glm::radians(-90.f), glm::vec3(1.0f, 0.0f, 0.0f)));
-        objModel = glm::rotate(objModel, glm::radians(-90.f), glm::vec3(1.0f, 0.0f, 0.0f));
-        objModel = glm::scale(objModel, glm::vec3(0.5f));
-        objModel = glm::translate(objModel, glm::vec3(0.0f, 0.0f, -2.0f));
-
-        shader.setMat4("model", objModel);
-        shader.setMat4("projection", projection);
+        // Set the matrices in the shader program
+        shader.setMat4("model", model);
         shader.setMat4("view", view);
-        shader.setVec3("lightPos", lightPos);
-        shader.setVec3("viewPos", cameraPos);
-        shader.setVec3("lightColor", glm::vec3(1.0f));
-        shader.setVec3("objectColor", glm::vec3(0.8f, 0.2f, 0.3f));
+        shader.setMat4("projection", projection);
         shader.setMat3("rotation", rotationMatrix);
+        // Render all objects in the scene
+        for (auto &obj : sceneObjects)
+        {
+            glBindVertexArray(obj.vao);
+            glDrawElements(GL_TRIANGLES, obj.indices.size(), GL_UNSIGNED_INT, 0);
+        }
 
-        glBindVertexArray(objVAO);
-        glDrawArrays(GL_TRIANGLES, 0, vertices.size());
+        // Render ImGui
+        drawIMGUI(fps, selectedColor);
 
-        drawIMGUI(fps);
-
+        // Poll events and swap buffers
         glfwPollEvents();
         glfwSwapBuffers(window);
     }
